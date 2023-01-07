@@ -1,5 +1,13 @@
 @import "../../common/common.module.scss";
 
+// profile styling
+$profileWidth: 480px;
+
+.profileContainer {
+    width: $profileWidth;
+}
+
+// header styling
 .headerContainer {
     float: left;
 }
@@ -12,16 +20,29 @@
     font-size: $subheaderTextSize;
 }
 
+// picture styling
+$pictureWidth: 120px;
+$pictureFontSizeRatio: 0.80;
+$pictureMarginTopRatio: 27%;
+$pictureBackground: $black;
+
 .pictureContainer {
     float: right;
-    width: 100px;
-    height: 100px;
-    background-color: #000000;
+    width: $pictureWidth;
+    height: $pictureWidth;
+    background-color: $pictureBackground;
     border-radius: 50%;
+
+    // center picture horizontally and vertically
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // clip picture
+    overflow: hidden;
 }
 
 .picture {
-    width: 100px;
-    height: auto;
-    font-size: 75px;
+    font-size: $pictureWidth*$pictureFontSizeRatio;
+    margin-top: $pictureMarginTopRatio;
 }
