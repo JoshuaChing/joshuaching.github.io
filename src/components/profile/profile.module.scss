@@ -1,0 +1,27 @@
+@import "../../common/common.module.scss";
+
+.headerContainer {
+    float: left;
+}
+
+.headerText {
+    font-size: $headerTextSize;
+}
+
+.subheaderText {
+    font-size: $subheaderTextSize;
+}
+
+.pictureContainer {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.picture {
+    width: 100px;
+    height: auto;
+    font-size: 75px;
+}

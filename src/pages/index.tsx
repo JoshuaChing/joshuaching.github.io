@@ -1,10 +1,11 @@
 import * as React from "react"
 import type { HeadFC } from "gatsby"
+import Profile from "../components/profile/profile"
 
 const IndexPage = () => {
   return (
     <main>
-      hello world
+      <Profile></Profile>
     </main>
   )
 }
