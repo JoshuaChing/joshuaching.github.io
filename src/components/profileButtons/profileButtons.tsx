@@ -1,4 +1,6 @@
 import * as React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const styles = require('./profileButtons.module.scss')
 
@@ -12,10 +14,10 @@ class ProfileButtons extends React.PureComponent {
         return (
             <div className={styles.profileButtonsContainer}>
                 <button className={styles.firstProfileButton} role="link" type="button" onClick={() => openInNewTab(gitHubUrl)}>
-                    {gitHubTitle}
+                    <FontAwesomeIcon icon={faGithub}/> {gitHubTitle}
                 </button>
                 <button className={styles.profileButton} role="link" type="button" onClick={() => openInNewTab(linkedInUrl)}>
-                    {linkedInTitle}
+                    <FontAwesomeIcon icon={faLinkedin}/> {linkedInTitle}
                 </button>
             </div>
         )
