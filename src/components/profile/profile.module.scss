@@ -50,3 +50,8 @@ $pictureBackground: $lightBlue;
     font-size: $pictureWidth*$pictureFontSizeRatio;
     margin-top: $pictureMarginTopRatio;
 }
+
+// description styling
+.descriptionContainer {
+    width: $profileWidth;
+}
