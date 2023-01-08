@@ -5,6 +5,7 @@ $profileWidth: 640px;
 $profileHeight: 160px;
 
 $mobileProfileWidth: 360px;
+$mobileProfileHeight: 150px;
 
 .profileContainer {
     position: relative;
@@ -12,6 +13,7 @@ $mobileProfileWidth: 360px;
     height: $profileHeight;
     @media (max-width: $mobileLayoutBreakpoint) {
         width: $mobileProfileWidth;
+        height: $mobileProfileHeight;
     }
 }
 
