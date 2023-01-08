@@ -3,16 +3,23 @@ $lightGray: #fafcfc;
 $lightBlue: #45c0e6;
 $silver: #bdc3c7;
 
+// mobile layout breakpoint
+$mobileLayoutBreakpoint: 720px;
+
 // common styling for texts
 $headerTextSize: 48px;
 $subheaderTextSize: 24px;
 $regularTextSize: 16px;
+
+$mobileHeaderTextSize: 40px;
+$mobileSubheaderTextSize: 20px;
 
 // common styling for buttons
 $buttonWidth: 120px;
 $buttonBorderRadius: 5px;
 
 // common styling for spacing
+$marginTiny: 5px;
 $marginLarge: 50px;
 $marginXLarge: 70px;
 $paddingMedium: 14px;

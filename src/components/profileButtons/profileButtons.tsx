@@ -6,18 +6,20 @@ const styles = require('./profileButtons.module.scss')
 
 const gitHubTitle = "GitHub"
 const gitHubUrl = "https://github.com/joshuaching"
+const gitHubIcon = <FontAwesomeIcon icon={faGithub}/>
 const linkedInTitle = "LinkedIn"
 const linkedInUrl = "https://www.linkedin.com/in/joshuaching"
+const linkedInIcon = <FontAwesomeIcon icon={faLinkedin}/>
 
 class ProfileButtons extends React.PureComponent {
     render() {
         return (
             <div className={styles.profileButtonsContainer}>
                 <button className={styles.firstProfileButton} role="link" type="button" onClick={() => openInNewTab(gitHubUrl)}>
-                    <FontAwesomeIcon icon={faGithub}/> {gitHubTitle}
+                    {gitHubIcon} {gitHubTitle}
                 </button>
                 <button className={styles.profileButton} role="link" type="button" onClick={() => openInNewTab(linkedInUrl)}>
-                    <FontAwesomeIcon icon={faLinkedin}/> {linkedInTitle}
+                    {linkedInIcon} {linkedInTitle}
                 </button>
             </div>
         )

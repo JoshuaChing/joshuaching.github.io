@@ -4,10 +4,15 @@
 $profileWidth: 640px;
 $profileHeight: 160px;
 
+$mobileProfileWidth: 360px;
+
 .profileContainer {
     position: relative;
     width: $profileWidth;
     height: $profileHeight;
+    @media (max-width: $mobileLayoutBreakpoint) {
+        width: $mobileProfileWidth;
+    }
 }
 
 // header styling
@@ -17,10 +22,16 @@ $profileHeight: 160px;
 
 .headerText {
     font-size: $headerTextSize;
+    @media (max-width: $mobileLayoutBreakpoint) {
+        font-size: $mobileHeaderTextSize;
+    }
 }
 
 .subheaderText {
     font-size: $subheaderTextSize;
+    @media (max-width: $mobileLayoutBreakpoint) {
+        font-size: $mobileSubheaderTextSize;
+    }
 }
 
 // picture styling
@@ -29,9 +40,11 @@ $pictureFontSizeRatio: 0.80;
 $pictureMarginTopRatio: 27%;
 $pictureBackground: $lightBlue;
 
+$mobilePictureWidth: 80px;
+
 .pictureContainer {
     @extend .centerVertical;
-    right: 0;
+    right: $marginTiny;
     width: $pictureWidth;
     height: $pictureWidth;
     background-color: $pictureBackground;
@@ -44,15 +57,26 @@ $pictureBackground: $lightBlue;
 
     // clip picture
     overflow: hidden;
+
+    @media (max-width: $mobileLayoutBreakpoint) {
+        width: $mobilePictureWidth;
+        height: $mobilePictureWidth;
+    }
 }
 
 .picture {
     font-size: $pictureWidth*$pictureFontSizeRatio;
     margin-top: $pictureMarginTopRatio;
+    @media (max-width: $mobileLayoutBreakpoint) {
+        font-size: $mobilePictureWidth*$pictureFontSizeRatio;
+    }
 }
 
 // description styling
 .descriptionContainer {
     font-size: $regularTextSize;
     width: $profileWidth;
+    @media (max-width: $mobileLayoutBreakpoint) {
+        width: $mobileProfileWidth;
+    }
 }
