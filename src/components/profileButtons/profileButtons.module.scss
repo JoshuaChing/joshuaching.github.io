@@ -1,0 +1,28 @@
+@import "../../common/common.module.scss";
+
+.profileButtonsContainer {
+    text-align:center;
+    margin:auto;
+    margin-top: $marginLarge;
+}
+
+.profileButton {
+    padding-top: $paddingMedium;
+    padding-bottom: $paddingMedium;
+    margin-left: $marginXLarge;
+    border: none;
+    border-radius: $buttonBorderRadius;
+    width: $buttonWidth;
+    background-color: $silver;
+    transition: 0.3s;
+}
+
+.profileButton:hover {
+    background-color: $lightBlue;
+    transition: 0.3s;
+}
+
+.firstProfileButton {
+    @extend .profileButton;
+    margin-left: 0;
+}
