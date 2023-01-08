@@ -1,6 +1,6 @@
 // colors
-$cloud: #ecf0f1;
-$black: #000000;
+$lightGray: #fafcfc;
+$lightBlue: #45c0e6;
 
 // common styling for texts
 $headerTextSize: 48px;
@@ -17,4 +17,10 @@ $subheaderTextSize: 24px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.centerVertical {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
 }

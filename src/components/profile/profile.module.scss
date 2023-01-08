@@ -2,14 +2,17 @@
 
 // profile styling
 $profileWidth: 640px;
+$profileHeight: 160px;
 
 .profileContainer {
+    position: relative;
     width: $profileWidth;
+    height: $profileHeight;
 }
 
 // header styling
 .headerContainer {
-    float: left;
+    @extend .centerVertical;
 }
 
 .headerText {
@@ -24,10 +27,11 @@ $profileWidth: 640px;
 $pictureWidth: 120px;
 $pictureFontSizeRatio: 0.80;
 $pictureMarginTopRatio: 27%;
-$pictureBackground: $black;
+$pictureBackground: $lightBlue;
 
 .pictureContainer {
-    float: right;
+    @extend .centerVertical;
+    right: 0;
     width: $pictureWidth;
     height: $pictureWidth;
     background-color: $pictureBackground;
