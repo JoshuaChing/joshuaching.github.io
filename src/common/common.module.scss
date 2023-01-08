@@ -1,10 +1,20 @@
 // colors
 $lightGray: #fafcfc;
 $lightBlue: #45c0e6;
+$silver: #bdc3c7;
 
 // common styling for texts
 $headerTextSize: 48px;
 $subheaderTextSize: 24px;
+
+// common styling for buttons
+$buttonWidth: 100px;
+$buttonBorderRadius: 5px;
+
+// common styling for spacing
+$marginLarge: 60px;
+$marginXLarge: 80px;
+$paddingMedium: 14px;
 
 .fullScreenContainer {
     height: 100vh;
