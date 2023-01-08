@@ -3,5 +3,18 @@ $cloud: #ecf0f1;
 $black: #000000;
 
 // common styling for texts
-$headerTextSize: 50px;
-$subheaderTextSize: 36px;
+$headerTextSize: 48px;
+$subheaderTextSize: 24px;
+
+.fullScreenContainer {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

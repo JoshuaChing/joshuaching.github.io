@@ -5,6 +5,7 @@ const styles = require('./profile.module.scss')
 const headerText = "Joshua Ching"
 const subheaderText = "Software Engineer"
 const picture = "👨‍💻"
+const description = "Currently working at Microsoft. Grateful for my past experiences at Yelp and Shopify."
 
 class Profile extends React.PureComponent {
     render() {
@@ -17,6 +18,7 @@ class Profile extends React.PureComponent {
                 <div className={styles.pictureContainer}>
                     <div className={styles.picture}>{picture}</div>
                 </div>
+                {/* <div>{description}</div> */}
             </div>
         )
     }
