@@ -1,7 +1,7 @@
 @import "../../common/common.module.scss";
 
 // profile styling
-$profileWidth: 640px;
+$profileWidth: 520px;
 $profileHeight: 160px;
 
 $mobileProfileWidth: 360px;
@@ -46,7 +46,7 @@ $mobilePictureWidth: 80px;
 
 .pictureContainer {
     @extend .centerVertical;
-    right: $marginTiny;
+    right: $marginSmall;
     width: $pictureWidth;
     height: $pictureWidth;
     background-color: $pictureBackground;
